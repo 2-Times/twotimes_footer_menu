@@ -1,0 +1,4 @@
+name = twotimes_footer_menu
+description = Creates a block containing the links etc for the footer
+package = Other
+core = 6.x

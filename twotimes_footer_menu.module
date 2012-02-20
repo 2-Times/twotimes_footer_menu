@@ -1,0 +1,26 @@
+<?php
+function twotimes_footer_menu_block($op = 'list', $delta = 0, $edit = array()) {
+  global $user;
+  $block = array();
+
+  switch ($op) {
+    case 'list':
+        $block['footer_menu']['info'] = t('Footer Block');
+        break;
+
+    case 'view':
+        $blockcontent = '';
+
+		$blockcontent .= "<a class='back-to-top menu-link' href='javascript:void(0)'>Back to Top</a>";
+		$blockcontent .= l(t('Contact'), 'contact', array('attributes' => array('class' => 'menu-link')));
+		$blockcontent .= l(t('Privacy'), 'privacy', array('attributes' => array('class' => 'menu-link')));
+		$blockcontent .= l(t('Returns'), 'returns', array('attributes' => array('class' => 'menu-link')));
+		$blockcontent .= l(t('Shipping Information'), 'shipping-information', array('attributes' => array('class' => 'menu-link')));
+		$blockcontent .= l(t('Terms of service'), 'tos', array('attributes' => array('class' => 'menu-link')));
+		$blockcontent .= "<span class='menu-link'>© 2-times.com</span>";
+	    $block['subject'] = t('');			
+	    $block['content'] = $blockcontent;
+	    break;	
+  }
+	return $block;
+}

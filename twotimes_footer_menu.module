@@ -11,7 +11,7 @@ function twotimes_footer_menu_block($op = 'list', $delta = 0, $edit = array()) {
     case 'view':
         $blockcontent = '';
 
-		$blockcontent .= "<a class='back-to-top menu-link' href='javascript:void(0)'>Back to Top</a>";
+		$blockcontent .= "<a class='back-to-top' href='javascript:void(0)'>Back to Top</a>";
 		$blockcontent .= l(t('Contact'), 'contact', array('attributes' => array('class' => 'menu-link')));
 		$blockcontent .= l(t('Privacy'), 'privacy', array('attributes' => array('class' => 'menu-link')));
 		$blockcontent .= l(t('Returns'), 'returns', array('attributes' => array('class' => 'menu-link')));

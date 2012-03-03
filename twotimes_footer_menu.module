@@ -18,6 +18,7 @@ function twotimes_footer_menu_block($op = 'list', $delta = 0, $edit = array()) {
 		$blockcontent .= l(t('Shipping Information'), 'shipping-information', array('attributes' => array('class' => 'menu-link')));
 		$blockcontent .= l(t('Terms of service'), 'tos', array('attributes' => array('class' => 'menu-link')));
 		$blockcontent .= "<span class='menu-link'>© 2-times.com</span>";
+		$blockcontent .= "<a class='home-link' href='/'>Home</a>";
 	    $block['subject'] = t('');			
 	    $block['content'] = $blockcontent;
 	    break;	
